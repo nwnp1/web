@@ -1,0 +1,101 @@
+:root {
+    /* color */
+    --color-black: #3f454d;
+    --color-white: #ffffff;
+    --color-blue: #3b88c3;
+    --color-yellow: #fbbe28;
+    --color-pink: #fd7f84;
+    --color-light-grey: #dfdfdf;
+
+    /* size */
+    --base-space: 8px;
+    --size-button: 60px;
+    --size-border: 4px;
+    --size-thumbnail: 50px;
+    font-size: 18px;
+
+    /* animation */
+    --size-animation-duration: 300ms;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-black);
+    display: flex; /* 이미지들 다 한 줄로 변경 */
+    flex-direction: column; /* 한 줄에 하나씩 나오도록 배치 */
+    justify-content: center;/*수평에서 정렬 */
+    align-items: center; 
+}
+
+.logo {
+    cursor: pointer;
+    transition: transform var(--size-animation-duration) ease; /*애니메이션 효과*/
+}
+
+.btn {
+    background-color: transparent;
+    border: none; /*테두리 없애기 */
+    outline: none; /*테두리 없애기 */
+    cursor: pointer;
+    transition: transform var(--size-animation-duration) ease;
+    margin-right: var(--base-space);
+}
+
+.btn:hover,
+.logo:hover{
+    transform: scale(1.1); /*마우스포인터 올렸을 때 좀 커짐*/
+}
+
+.buttons {
+    display: flex;
+    align-items: center; /*좌우대칭 동일하도록..? */
+}
+
+.imgBtn {
+    width: var(--size-button);
+    height: var(--size-button);
+}
+
+.colorBtn {
+    font-size: var(font-size);
+    padding: calc(var(--base-space)*2);
+    border-radius: var(--size-border);
+}
+
+.blue {
+    background-color: var(--color-blue);
+}
+
+.yellow {
+    background-color: var(--color-yellow);
+}
+
+.pink {
+    background-color: var(--color-pink);
+}
+
+.items {
+    width: 60%;
+    height: 60%;
+    list-style: none;
+    padding-left: 0;
+    overflow-y: scroll; /*items 안에서만 스크롤 */
+}
+
+.item {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    padding:var(--base-space);
+    margin-bottom: var(--base-space);
+}
+
+.item__thumbnail {
+    width: var(--size-thumbnail);
+    height: var(--size-thumbnail);
+}
+
+.item__description {
+    margin-left: var(--base-space);
+    font-size: var(font-size);
+}
