@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>오늘뭐먹지-설문</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+    <link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/signin.css">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        .hn{font-family: 'Hanna', sans-serif;}
+
+    </style>
+
+
+    <!-- Custom styles for this template -->
+</head>
+<body class="text-center">
+
+<main class="form-signin">
+    <form>
+        <img class="mb-4" src="\image\image3.PNG" alt="" width="50" height="50">
+        <div class="text-center" style="font-family: 'Hanna', sans-serifhn">
+            <div class="mx-auto">
+                <p>간단한 설문에 응답하고</p><p>오늘의 메뉴를 추천받으세요!</p>
+            </div>
+            <div class="table" class="text-center">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>
+                            <div style="font-size: large">
+                                성별
+                            </div>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-gray">
+                                    <input type="radio" name="sex-radio" id="MAN">남
+                                </label>
+                                <label class="btn btn-gray">
+                                    <input type="radio" name="sex-radio" id="WOMAN">여
+                                </label>
+                            </div>
+                            <p></p>
+                            <div style="font-size: large">
+                                출생
+                            </div>
+                            <div class="text-center">
+                                <select class="form-select" id="country" required>
+                                    <option value="">출생년도</option>
+                                    <option>1980</option>
+                                    <option>1981</option>
+                                    <option>1982</option>
+                                    <option>1983</option>
+                                    <option>1984</option>
+                                    <option>1985</option>
+                                    <option>1986</option>
+                                    <option>1987</option>
+                                    <option>1988</option>
+                                    <option>1989</option>
+                                    <option>1990</option>
+                                    <option>1991</option>
+                                    <option>1992</option>
+                                    <option>1993</option>
+                                    <option>1994</option>
+                                    <option>1995</option>
+                                    <option>1996</option>
+                                    <option>1997</option>
+                                    <option>1998</option>
+                                    <option>1999</option>
+                                    <option>2000</option>
+                                    <option>2001</option>
+                                    <option>2002</option>
+                                    <option>2003</option>
+                                    <option>2004</option>
+                                    <option>2005</option>
+                                    <option>2006</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    출생년도를 선택해주세요.
+                                </div>
+                            </div>
+                            <p></p>
+                            <div style="font-size: large">
+                                주소
+                            </div>
+                            <div>
+                                <div class="input-group mb-3">
+                                    <input v-model="address.address1"
+                                           type="text" class="form-control" placeholder="주소" readonly>
+                                    <div class="input-group-append">
+                                        <button @click="clickOpenAddressModal" class="btn btn-outline-secondary" type="button">주소검색</button>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <input v-model="address.address2" type="text" class="form-control" placeholder="상세주소">
+                                </div>
+                            </div>
+                            <p></p>
+                            <div style="font-size: large">
+                                선호하는 요리
+                            </div>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-gray">
+                                    <input type="radio" name="food" id="korean">한식
+                                </label>
+                                <label class="btn btn-gray">
+                                    <input type="radio" name="food" id="chinese">중식
+                                </label>
+                                <label class="btn btn-gray">
+                                    <input type="radio" name="food" id="western">양식
+                                </label>
+                            </div>
+                            <p></p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-gray">
+                                    <input type="radio" name="food" id="japanese">일식
+                                </label>
+                                <label class="btn btn-gray">
+                                    <input type="radio" name="food" id="fastfood">패스트푸드
+                                </label>
+                            </div>
+
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-6 mx-auto">
+                <button type="button" class="w-100 btn btn-outline-secondary" onclick="location.href='survey2.html'">다음</button>
+            </div>
+    </form>
+</main>
+
+</body>
+</html>

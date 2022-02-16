@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Signin Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+    <link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        .hn{font-family: 'Hanna', sans-serif;}
+    </style>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+<body class="text-center" style="font-family: 'Hanna', sans-serifhn">
+
+
+
+<main class="form-signin">
+    <form>
+        <img class="mb-4" src="\image\image2.png" alt="" width="150" height="150">
+        <div class="text-center">
+            <div class="mx-auto">
+                <p class="lead mb-4">Review를 작성해주세요!</p>
+            </div>
+            <div class="col-lg-6 mx-auto">
+                 <small>사진 첨부하기 <small>
+                <input type='file'  class="btn-outline-secondary" >
+
+            </div>
+            <p></p>
+    </form>
+    <form>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" id="message" type="text"  style="height: 10rem" data-sb-validations="required"></textarea>
+        </div>
+
+
+        <div class="star-rating">
+            <p class="lead mb-4">별점 |&nbsp;
+            <input type="radio" id="5-stars" name="rating" value="5" />
+            <label for="5-stars" class="star">&#9733;</label>
+            <input type="radio" id="4-stars" name="rating" value="4" />
+            <label for="4-stars" class="star">&#9733;</label>
+            <input type="radio" id="3-stars" name="rating" value="3" />
+            <label for="3-stars" class="star">&#9733;</label>
+            <input type="radio" id="2-stars" name="rating" value="2" />
+            <label for="2-stars" class="star">&#9733;</label>
+            <input type="radio" id="1-star" name="rating" value="1" />
+            <label for="1-star" class="star">&#9733;</label>
+        </div>
+        <p></p>
+
+        <div class="col-lg-6 mx-auto">
+            <button type="button" class="w-100 btn btn-outline-secondary">평가 남기기</button>
+        </div>
+
+    </form>
+</main>
+
+
+</body>
+</html>
+
